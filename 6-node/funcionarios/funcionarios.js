@@ -1,12 +1,12 @@
 /*
 
 No script package.json nos colocamos o script start que liga o nodemon
-Como colocamos o main este aqui, quando d· npm start, ele inicia o 
-script que est· l· no main
+Como colocamos o main este aqui, quando d√° npm start, ele inicia o 
+script que est√° l√° no main
 
-npm dev n„o funciona, start e test funcionam pq s„o defaults, dev n„o...
+npm dev n√£o funciona, start e test funcionam pq s√£o defaults, dev n√£o...
 
-Ai para dev funcionar, como È customizado:
+Ai para dev funcionar, como √© customizado:
 
 npm run dev
 
@@ -29,7 +29,7 @@ axios.get(url).then(response => {
   const funcionarios = response.data
   //console.log(funcionarios)
 
-  // Mulher chinesa com menor sal·rio
+  // Mulher chinesa com menor sal√°rio
   const chinesaEstagiaria = funcionarios
   //.filter(chineses)
   .filter(mulheres)

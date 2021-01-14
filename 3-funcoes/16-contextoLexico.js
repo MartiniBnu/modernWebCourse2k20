@@ -9,5 +9,5 @@ function exec() {
   minhaFuncao()
 }
 
-// Imprimi Global pq ele usa a que a minhaFuncao t· vendo, ou seja, a Global
+// Imprimi Global pq ele usa a que a minhaFuncao t√° vendo, ou seja, a Global
 exec()

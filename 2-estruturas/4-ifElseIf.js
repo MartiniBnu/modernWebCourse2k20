@@ -8,11 +8,11 @@ const imprimirResultado = function (nota) {
   } else if (nota.entre(7,8.99)) {
     console.log('Aprovado')
   } else if (nota.entre(4,6.99)) {
-    console.log('RecuperaÁ„o')
+    console.log('Recupera√ß√£o')
   } else if (nota.entre(0,3.99)) {
     console.log('Reprovado')
   } else {
-    console.log('Nota Inv·lida')
+    console.log('Nota Inv√°lida')
   }
 
   //console.log('Fim')

@@ -1,4 +1,4 @@
-console.log(this === global) // n„o aponta pra global, mas para module.exports
+console.log(this === global) // n√£o aponta pra global, mas para module.exports
 console.log(this === module)
 
 console.log(this === module.exports)
@@ -10,7 +10,7 @@ function logThis() {
   console.log(this === exports)
   console.log(this === module.exports)
   console.log(this === global)
-  // Dentro de uma funÁ„o sempre aponta para Global
+  // Dentro de uma fun√ß√£o sempre aponta para Global
 }
 
 logThis()

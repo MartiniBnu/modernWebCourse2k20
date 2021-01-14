@@ -1,4 +1,4 @@
-// Pessoa aponta pra um endereÁo de memÛria, ex: 1232ds43232
+// Pessoa aponta pra um endere√ßo de mem√≥ria, ex: 1232ds43232
 const pessoa = { nome: 'Joao'}
 
 // Nao mudamos a constante, mas sim seu dado
@@ -10,7 +10,7 @@ console.log(pessoa)
 //pessoa = { nome: 'Ana'}
 
 
-// Congelar o objeto pessoa, agora sim n„o muda mais nada
+// Congelar o objeto pessoa, agora sim n√£o muda mais nada
 Object.freeze(pessoa)
 pessoa.end = 'Rua ABC'
 delete pessoa.nome
@@ -18,7 +18,7 @@ pessoa.nome = 'Maria'
 
 console.log(pessoa)
 
-// Criar um objeto j· congelado
+// Criar um objeto j√° congelado
 const pessoaConstante = Object.freeze({nome: 'John Snow'})
 pessoaConstante.nome = 'Maria'
 console.log(pessoaConstante)

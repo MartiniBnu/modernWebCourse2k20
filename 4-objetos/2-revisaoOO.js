@@ -1,4 +1,4 @@
-// coleÁ„o din‚mica de pares chave/valor 
+// cole√ß√£o din√¢mica de pares chave/valor 
 const produto = new Object
 produto.nome = 'Cadeira'
 produto['marca'] = 'Generica'

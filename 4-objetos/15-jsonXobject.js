@@ -8,5 +8,5 @@ console.log(JSON.stringify(obj))
 //console.log(JSON.parse("{'a': 1, 'b': 2, 'c': 3}"))
 console.log(JSON.parse('{"a": 1, "b": 2, "c": 3}'))
 
-// Outra opção que suporta
+// Outra opÃ§Ã£ que suporta
 console.log(JSON.parse('{"a": 1.76, "b": "string", "c": true, "d": {}, "e":[]}'))

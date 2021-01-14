@@ -11,7 +11,7 @@ console.log(obj1)
 const obj2 = new Object
 console.log(obj2)
 
-// 3 - Criando próprias funções construtoras
+// 3 - Criando prÃ³prias funÃ§Ãµes construtoras
 function Produto(nome, preco, desc) {
   this.nome = nome
   preco = preco
@@ -29,7 +29,7 @@ console.log(obj3.getPrecoComDesconto(),obj4.getPrecoComDesconto())
 
 
 
-// 4 - Função Factory
+// 4 - FunÃ§Ã£o Factory
 function criaFuncionario(nome, salarioBase, faltas) {
   return {
     nome,
@@ -46,7 +46,7 @@ const f2 = criaFuncionario('Maria',11400, 1)
 console.log(f1.getSalario(),f2.getSalario())
 
 
-// 5 - Object.create - será falado melhor depois
+// 5 - Object.create - serÃ¡ falado melhor depois
 const filha = Object.create(null)
 filha.nome = 'Ana'
 console.log(filha)

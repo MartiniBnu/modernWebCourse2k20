@@ -1,16 +1,16 @@
-// Ponteiro de memória
+// Ponteiro de memÃ³ria
 const a = { name: 'Teste' }
 console.log(a)
 
-// As duas vão apontar pro mesmo endereço
+// As duas vÃ£o apontar pro mesmo endereÃ§o
 const b = a
 
-// Fizemos atribuição por referência
+// Fizemos atribuiÃ§Ã£o por referÃªncia
 b.name = 'Opra'
 console.log(a)
 console.log(b)
 
-/* --------------- atribuição por valor -------------------------- */
+/* --------------- atribuiÃ§Ã£o por valor -------------------------- */
 let c = 3
 let d = c
 d++
@@ -21,24 +21,24 @@ console.log(c, d)
 let valor
 console.log(valor)
 valor = null
-console.log(valor) // Não está mais undefined
+console.log(valor) // NÃ£o estÃ¡ mais undefined
 
 // NUnca setar para undefined, usar null
-// se for necessário retirar o ponteiro de uma variável
+// se for necessario retirar o ponteiro de uma variavel
 
-//console.log(valor.toString()) // Dá erro
+//console.log(valor.toString()) // Da erro
 
 const produto = {}
-console.log(produto.preco) // Produto está definido, então não dá erro
+console.log(produto.preco) // Produto esta definido, entao nao da erro
 
-//console.log(produto.preco.a) // aqui dá pau pq preco não existe
+//console.log(produto.preco.a) // aqui da pau pq preco nao existe
 
 produto.preco = 3.50
 console.log(produto)
 
-produto.preco = undefined // evitar atribuir undefined, use null ou 0 quando numérico
+produto.preco = undefined // evitar atribuir undefined, use null ou 0 quando numurico
 console.log(!!produto.preco)
-console.log(produto) // Ainda existe o campo preço
+console.log(produto) // Ainda existe o campo preÃ§o
 // Se quiser tirar
 //delete produto.preco
 //console.log(produto)

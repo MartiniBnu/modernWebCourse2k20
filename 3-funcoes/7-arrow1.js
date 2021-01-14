@@ -13,10 +13,10 @@ console.log(dobro(Math.PI))
 console.log(dobro2(Math.PI))
 console.log(dobro3(Math.PI))
 
-ola = () => 'Ol·'
+ola = () => 'Ol√°'
 console.log(ola())
 
-/* O underline È para dizer que tem 1 par‚metro, no lugar do () */
-ola2 = _ => 'Ol·'
+/* O underline √© para dizer que tem 1 par√¢metro, no lugar do () */
+ola2 = _ => 'Ol√°'
 
 console.log(ola2())

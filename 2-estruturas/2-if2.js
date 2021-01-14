@@ -10,7 +10,7 @@ teste1(6)
 teste1(8)
 teste1('9')
 
-// o ; vai quebrar ali e não rodar o teste, na real o teste só irá valer até o ;
+// o ; vai quebrar ali e nÃ£o rodar o teste, na real o teste sÃ³ irÃ¡ valer atÃ© o ;
 function teste2(num) {
   if (num > 7); {
     console.log(num)

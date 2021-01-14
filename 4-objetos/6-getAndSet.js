@@ -1,5 +1,5 @@
 const sequencia = {
-  _valor: 1, /* O _ é um convenção para deixar privada, mas não é privada, é só convenção mesmo */
+  _valor: 1, /* O _ Ã© um convenÃ§Ã£o para deixar privada, mas nÃ£o Ã© privada, Ã© sÃ³ convenÃ§Ã£o mesmo */
   get valor() {return this._valor ++},
   set valor(valor) { 
     if(valor > this._valor) {
@@ -12,6 +12,6 @@ console.log(sequencia.valor, sequencia.valor)
 sequencia.valor = 1000
 
 console.log(sequencia.valor, sequencia.valor)
-sequencia.valor = 1000 // Jao fez pq é menor
+sequencia.valor = 1000 // Jao fez pq Ã© menor
 
 console.log(sequencia.valor, sequencia.valor)

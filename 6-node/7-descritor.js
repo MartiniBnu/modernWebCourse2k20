@@ -1,6 +1,6 @@
 const { initial } = require("lodash")
 
-// npm init, irá começar a criar o descritor
+// npm init, irÃ¡ comeÃ§ar a criar o descritor
 
 /* 
 
@@ -49,5 +49,5 @@ Is this OK? (yes) yes
 */
 
 
-/* adicionar com dependências */
+/* adicionar com dependÃªncias */
 //npm i --save axios

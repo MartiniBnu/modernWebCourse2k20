@@ -7,15 +7,15 @@ const database = require('./database')
 
 /*
 
-// Quando tiver mais, depomos fazer na mesma URL, e depois com next ele vai pra próxima
+// Quando tiver mais, depomos fazer na mesma URL, e depois com next ele vai pra prÃ³xima
 app.get('/produtos', (req, res, next) => {
   console.log('Middleware 1...')
   next()
 })
 
-// Uma forma de criar uma que atende todas as requests é com o use
+// Uma forma de criar uma que atende todas as requests Ã© com o use
 app.use((req, res, next) => {
-  res.send({nome: 'Notebook', preco: 123.45}) // É convertido para JSON
+  res.send({nome: 'Notebook', preco: 123.45}) // Ã© convertido para JSON
 })
 */
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 
 app.get('/produtos', (req, res, next) => {
-  res.send(database.getProdutos()) // É convertido para JSON
+  res.send(database.getProdutos()) // Ã‰ convertido para JSON
 })
 
 app.get('/produtos/:id', (req, res, next) => {

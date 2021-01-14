@@ -1,4 +1,4 @@
-const fs = require('fs') // … core, j· vem prÈ-instalado
+const fs = require('fs') // √â core, j√° vem pr√©-instalado
 
 const produto = {
   nome: 'Celular',

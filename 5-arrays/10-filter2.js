@@ -10,7 +10,7 @@ Array.prototype.filter2 = function (callback) {
 
 
 // Filtra um array
-// Ao invÈs de fazer for each, pode fazer j· o filter
+// Ao inv√©s de fazer for each, pode fazer j√° o filter
 const produtos = [
   { nome: 'Notebook', preco: 2499, fragil: true },
   { nome: 'iPad Pro', preco: 4199, fragil: true },

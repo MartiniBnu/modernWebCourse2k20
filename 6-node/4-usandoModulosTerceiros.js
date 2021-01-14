@@ -1,8 +1,8 @@
-// npm é o gerenciador de pacotes do node
+// npm Ã© o gerenciador de pacotes do node
 // Aqui instalamos o lodash
     // npm i lodash
 
-// Instalação global de dependencias
+// InstalaÃ§Ã£o global de dependencias
 
    // npm i -g nodemon
 
@@ -19,15 +19,15 @@ https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the executi
 PS C:\WINDOWS\system32> Get-ExecutionPolicy
 Unrestricted
 
-nodemon vai ficar rodando, e não precisa ficar rodando de volta, é só salvar e já roda
+nodemon vai ficar rodando, e nÃ£o precisa ficar rodando de volta, Ã© sÃ³ salvar e jÃ¡ roda
 
 
 */
 
 
 
-// Comum, quando usar lib, começar com _
-// Quando não colaca-se nada, ele procura na pasta por um arquivo index.js dentro de node_modules
+// Comum, quando usar lib, comeÃ§aar com _
+// Quando nÃ£o colaca-se nada, ele procura na pasta por um arquivo index.js dentro de node_modules
 const _ = require('lodash')
 
 setInterval(() => {

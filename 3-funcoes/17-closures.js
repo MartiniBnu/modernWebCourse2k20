@@ -1,7 +1,7 @@
-// Closure È o escopo criado quando uma funÁ„o È declarada
-// Esse escopo permite a funÁ„o acessar e manipular vari·veis externas a funÁ„o
+// Closure √© o escopo criado quando uma fun√ß√£o √© declarada
+// Esse escopo permite a fun√ß√£o acessar e manipular vari√°veis externas a fun√ß√£o
 
-// Contexto lexico em aÁ„o 
+// Contexto lexico em a√ß√£o 
 const x = 'Global'
 
 function fora() {

@@ -1,8 +1,8 @@
-/* Os triângulos podem ser classificados em 3 tipos quanto ao tamanho de seus lados:
-Equilátero: Os três lados são iguais. Isósceles: Dois lados iguais. Escaleno: Todos os lados são diferentes.
-Crie uma função que recebe os comprimentos dos três lados de um triângulo e retorne sua classificação quanto
-ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
-triângulo).
+/* Os triÃ¢ngulos podem ser classificados em 3 tipos quanto ao tamanho de seus lados:
+EquilÃ¡tero: Os trÃªs lados sÃ£o iguais. IsÃ³sceles: Dois lados iguais. Escaleno: Todos os lados sÃ£o diferentes.
+Crie uma funÃ§Ã£o que recebe os comprimentos dos trÃªs lados de um triÃ¢ngulo e retorne sua classificaÃ§Ã£o quanto
+ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condiÃ§Ãµes matemÃ¡ticas de existÃªncia de um
+triÃ¢ngulo).
  */
 
  function getClassificaoTriangulo(a,b,c){

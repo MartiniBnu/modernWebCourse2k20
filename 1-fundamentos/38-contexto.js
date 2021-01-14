@@ -15,21 +15,21 @@ console.log(module.exports)
 
 console.log(module.exports.c === this)
 
-// N„o faÁa isso em casa, pq aqui vai jogar l· no global
+// Nao fa√ßa isso em casa, pq aqui vai jogar l√° no global
 console.log(global.abc)
 
-// this no node È o module.exports
+// this no node √© o module.exports
 
 
-// window È o global 
-// this. tambÈm pega o global 
+// window √© o global 
+// this. tamb√©m pega o global 
 /*
 var a = 'texto'
 
 // No browser
 console(window.a)
 
-let e const n„o s„o acess·veis via window
+let e const n√£o s√£o acess√≠veis via window
 
 
 
@@ -55,13 +55,13 @@ undefined
 function f1 () { return this == window } 
 undefined
 this.f1
-É f1 () { return this == window }
+ÔøΩ f1 () { return this == window }
 const f1 = 12
 VM493:1 Uncaught SyntaxError: Identifier 'f1' has already been declared
 let pessoa = {nome: 'Ana', falar: function() { return `Eu sou ${this.nome}` }}
 undefined
 pessoa.falar
-É () { return `Eu sou ${this.nome}` }
+ÔøΩ () { return `Eu sou ${this.nome}` }
 this.nomer
 undefined
 this.nome
@@ -73,7 +73,7 @@ pessoa.nome = 'Marcos'
 pessoa.falar()
 "Eu sou Marcos"
 pessoa.verificaEscopo = function() { return this === window }
-É () { return this === window }
+ÔøΩ () { return this === window }
 pessoa.verificaEscopo()
 false
 

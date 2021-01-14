@@ -1,7 +1,7 @@
 const contadorA = require('./8-instanciaUnica')
 const contadorB = require('./8-instanciaUnica')
 
-const contadorC = require('./8-instanciaNova')() /* Retorna um objeto da função factory */
+const contadorC = require('./8-instanciaNova')() /* Retorna um objeto da funÃ§Ã£o factory */
 const contadorD = require('./8-instanciaNova')()
 
 

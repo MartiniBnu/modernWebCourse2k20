@@ -1,4 +1,4 @@
-// TUdo é função
+// TUdo Ã© funÃ§Ã£o
 console.log(typeof Object)
 
 class Produto {}

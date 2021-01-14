@@ -2,7 +2,7 @@ const a = 1
 const b = 2
 const c = 3
 
-// Na vers„o antiga precisava assim:
+// Na vers√£o antiga precisava assim:
 const obj1 = {a: a, b:b, c: c}
 
 // Agora pode ser assim
@@ -18,7 +18,7 @@ obj3[nomeAttr] = valorAttr
 console.log(obj3)
 
 
-// Outra opÁ„o
+// Outra op√ß√£o
 const obj4 = {[nomeAttr]: valorAttr}
 console.log(obj4)
 
@@ -27,6 +27,6 @@ const obj5 = {
     // Era assim antes, tradicional
   },
   funcao2() {
-    // SÛ pode assim na vers„o mais nova
+    // S√≥ pode assim na vers√£o mais nova
   }
 }

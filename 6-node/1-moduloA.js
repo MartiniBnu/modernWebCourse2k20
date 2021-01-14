@@ -1,5 +1,5 @@
-// dentro de node um arquivo representa um módulo
-// tudo dentro de um módulo é visto só por ele...
+// dentro de node um arquivo representa um mÃ³dulo
+// tudo dentro de um mÃ³dulo Ã© visto sÃ³ por ele...
 // para mandar para fora (export ou this) para pegar de fora (import)
 
 this.ola = 'Fala pessoal'

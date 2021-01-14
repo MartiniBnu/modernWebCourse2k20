@@ -1,11 +1,11 @@
-// Armazenando uma função em uma variável
+// Armazenando uma funÃ§Ã£o em uma variÃ¡vel
 const imprimirSoma = function(a, b) {
   console.log(a+b)
 }
 imprimirSoma(2,4)
 
 
-// Armazenando uma função arrow em uma variavel
+// Armazenando uma funÃ§Ã£o arrow em uma variavel
 const soma = (a,b) => {
   return a+b
 }

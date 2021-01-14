@@ -12,7 +12,7 @@ console.log(total1 / alunos.length)
 
 
 // Declarativo
-// Declarativo é uma abordagem mais interessante por re-uso
+// Declarativo Ã© uma abordagem mais interessante por re-uso
 const getNota = aluno => aluno.nota
 const soma = (total, atual) => total + atual
 const total2 = alunos.map(getNota).reduce(soma)

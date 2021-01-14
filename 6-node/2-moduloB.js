@@ -1,4 +1,4 @@
-// Mais cl·ssica e recomendada
+// Mais cl√°ssica e recomendada
 module.exports = {
   bomDia: 'Bom dia',
   boaNoite() {

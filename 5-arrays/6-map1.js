@@ -7,13 +7,13 @@ let resultado = nums.map(function(e) {
 })
 
 console.log(resultado,nums)
-// map não transforma o atual, mas o novo criado
+// map n~so transforma o atual, mas o novo criado
 
 
 const soma10 = e => e + 10
 const triplo = e => e * 3 
 const paraDinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace(',','.')}`
 
-// map com 3 funções encadeadas 
+// map com 3 funÃ§Ãµes encadeadas 
 resultado = nums.map(soma10).map(triplo).map(paraDinheiro)
 console.log(resultado)

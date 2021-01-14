@@ -1,7 +1,7 @@
 // Metodos importantes e mais simples
 
 const pilotos = ['Vettel', 'Alonso', 'Raikonnen', 'Massa']
-// Como È const, n„o podemos mais criar registros
+// Como √© const, n√£o podemos mais criar registros
 
 console.log(pilotos)
 
@@ -15,7 +15,7 @@ pilotos.push('Verstappen')
 console.log(pilotos)
 
 
-// Shift, tira da primeira posiÁ„o 
+// Shift, tira da primeira posi√ß√£o 
 pilotos.shift()
 console.log(pilotos)
 
@@ -25,12 +25,12 @@ pilotos.unshift('Hamilton')
 console.log(pilotos)
 
 
-// Adicionar numa posiÁ„o especÌfica
+// Adicionar numa posi√ß√£o espec√≠fica
 pilotos.splice(2,0,'Bottas','Massa')
 console.log(pilotos)
 
 
-// Remover algum numa posiÁ„o especÌfica
+// Remover algum numa posi√ß√£o espec√≠fica
 pilotos.splice(3,1)
 console.log(pilotos)
 
@@ -39,6 +39,6 @@ console.log(pilotos)
 const algunsPilots = pilotos.slice(2)
 console.log(algunsPilots)
 
-// Pegar novamente com outras formas (Pega do 1 atÈ o 4)
+// Pegar novamente com outras formas (Pega do 1 at√© o 4)
 const algunsPilotos3 = pilotos.slice(1,4)
 console.log(algunsPilotos3)

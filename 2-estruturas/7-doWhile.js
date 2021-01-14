@@ -5,7 +5,7 @@ function getInteiroAleatorioEntre(min, max) {
 
 let opcao = -1
 
-// Sempre ira fazer a primeira vez e sÛ testar· no final
+// Sempre ira fazer a primeira vez e s√≥ testar√° no final
 do {
   opcao = getInteiroAleatorioEntre(-1,10)
   console.log('Opcao escolhida foi '+opcao)

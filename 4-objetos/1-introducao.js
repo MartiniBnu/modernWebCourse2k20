@@ -1,4 +1,4 @@
-// codigo n„o execut·vel
+// codigo n√£o execut√°vel
 
 // procedural
 //processamento (valor1, valor2, valor3)
@@ -16,8 +16,8 @@ objeto = {
 objeto.processamento() // foco desse exemplo passou a ser o objeto
 
 
-// PrincÌpios importantes:
-// 1. abstraÁ„o
+// Princ√≠pios importantes:
+// 1. abstra√ß√£o
 // 2. ecanpsulamento
-// 3. heranÁa (prototype)
+// 3. heran√ßa (prototype)
 // 4. polimorfismo

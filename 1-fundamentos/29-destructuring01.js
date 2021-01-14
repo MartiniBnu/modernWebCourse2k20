@@ -3,17 +3,17 @@ const pessoa = {
   nome: 'Ana',
   idade: 5,
   endereco: {
-    logradouro: 'Rua Das Hortências',
+    logradouro: 'Rua Das HortÃªncias',
     numero: 1000
   }
 }
 
-// Tira do objeto pessoa as duas variáveis
+// Tira do objeto pessoa as duas variÃ¡veis
 const { nome, idade } = pessoa
 console.log(nome, idade)
 console.log(pessoa)
 
-// Fazer o mesmo mas colocando em novas varíaveis
+// Fazer o mesmo mas colocando em novas variaveis
 const { nome: n, idade: i } = pessoa
 console.log(n, i)
 

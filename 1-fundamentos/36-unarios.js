@@ -7,8 +7,8 @@ console.log(num1)
 --num1
 console.log(num1)
 
-/* O ++ vai rodar antes da comparação e o -- só no final */
+/* O ++ vai rodar antes da comparaÃ§Ã£o e o -- sÃ³ no final */
 console.log(++num1 == num2--)
 
-/* Aqui já está calculado */
+/* Aqui ja esta calculado */
 console.log(num1 == num2)

@@ -1,4 +1,4 @@
-// Se tiver como escolher entre HeranÁa ou ComposiÁ„o, usar composiÁ„o, pois ela pode ter v·rios pais, heranÁa È uma sÛ
+// Se tiver como escolher entre Heran√ßa ou Composi√ß√£o, usar composi√ß√£o, pois ela pode ter v√°rios pais, heran√ßa √© uma s√≥
 const ferrari = {
   modelo: 'F40',
   velMax: 324
@@ -10,12 +10,12 @@ const volvo = {
 }
 
 // Acessa o pai (__proto__) - Tipo o Super
-console.log(ferrari.prototype) // Objeto n„o tem isso, sÛ o __proto___
+console.log(ferrari.prototype) // Objeto n√£o tem isso, s√≥ o __proto___
 console.log(ferrari.__proto__)
 console.log(ferrari.__proto__ === Object.prototype)
 console.log(volvo.__proto__ === Object.prototype)
 console.log(volvo.__proto__ === ferrari.__proto__)
-console.log(Object.prototype.__proto__) // Aqui È o ultimo nivel
+console.log(Object.prototype.__proto__) // Aqui √© o ultimo nivel
 
 
 function meuObjeto() {}

@@ -15,7 +15,7 @@ const carrinho = [
   '{"nome": "Caneta", "preco": 7.50}'
 ]
 
-// Retornar um array apenas com os preços
+// Retornar um array apenas com os preÃ§os
 
 const paraObjeto = json => JSON.parse(json)
 const apenasPreco = produto => produto.preco

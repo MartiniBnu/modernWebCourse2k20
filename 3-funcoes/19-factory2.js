@@ -1,4 +1,4 @@
-// Função factory 
+// FunÃ§Ã£o factory 
 function criaProduto(nome, preco, desconto = 0.1){
   return {
     nome,

@@ -1,7 +1,7 @@
 const escola = "Cod3r"
 
 console.log(escola.charAt(4))
-// N„o tem na posiÁ„o 5, mas n„o d· erro, sÛ volta vazio
+// N√£o tem na posi√ß√£o 5, mas n√£o d√° erro, so volta vazio
 console.log(escola.charAt(5))
 
 // ASCII

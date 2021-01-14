@@ -1,6 +1,6 @@
-// Interpetrador j· tem todas function declaration
+// Interpetrador j√° tem todas function declaration
 console.log(soma(3,4))
-// Function expression e named n„o d·
+// Function expression e named n√£o d√°
 //console.log(sub(3,4))
 //console.log(mult(3,4))
 
@@ -16,7 +16,7 @@ const sub = function(x,y) {
 }
 console.log(sub(3,4))
 
-// named function expression (sÛ ajuda quando est· debugando um stack trace pq mostra o nome interno da funÁ„o)
+// named function expression (s√≥ ajuda quando est√° debugando um stack trace pq mostra o nome interno da fun√ß√£o)
 const mult = function mult(x,y) {
   return x * y
 }

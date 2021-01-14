@@ -1,4 +1,4 @@
-// Função factory 
+// FunÃ§Ã£o factory 
 function criaPessoa(){
   return {
     nome: 'Ana',

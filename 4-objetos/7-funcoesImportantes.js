@@ -20,7 +20,7 @@ Object.entries(pessoa).forEach(([chave, valor]) => {
 
 
 Object.defineProperty(pessoa, 'dataNascimento', {
-  enumerable: true, /* Remove dos enumer·veis com false */
+  enumerable: true, /* Remove dos enumer√°veis com false */
   writable: false,
   value: '01/01/2019'
 })
@@ -34,7 +34,7 @@ const dest = {a: 1}
 const o1 = { b: 2}
 const o2 = {c: 3, a: 4}
 // Colocar no dest todos atributos dos objetos passados
-// Se j· tem atributo no destino, ele usa o mesmo valor dos passados para ele, 
+// Se j√° tem atributo no destino, ele usa o mesmo valor dos passados para ele, 
 // por isso fica a:4
 const obj = Object.assign(dest, o1, o2)
 

@@ -6,7 +6,7 @@ isAtivo = true
 console.log(isAtivo)
 
 isAtivo = 1
-console.log(!isAtivo) /* Aqui é feito um implicito para Boolean devido ao ! ou if */
+console.log(!isAtivo) /* Aqui Ã© feito um implicito para Boolean devido ao ! ou if */
 
 console.log("os vedadeiros...")
 
@@ -30,6 +30,6 @@ console.log(!!('' || null || 0 || ' '))
 
 console.log('' || null || 0 || 'Uepa')
 
-/* Exemplo pratico de inicialização */
+/* Exemplo pratico de inicializaÃ§Ã£o */
 let nome = 'Lugas'
 console.log(nome || 'Desconhecido')

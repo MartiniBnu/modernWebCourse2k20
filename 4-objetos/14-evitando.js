@@ -1,8 +1,8 @@
-// Como evitar modificações nos objetos
+// Como evitar modificaÃ§Ãµes nos objetos
 
 // Previnir qtde de atributos
 const produto = Object.preventExtensions({
-  nome: 'Qualquer', preco: 1.99, tag: 'promoção'
+  nome: 'Qualquer', preco: 1.99, tag: 'promoÃ§Ã£o'
 })
 
 console.log('Extensivel: ', Object.isExtensible(produto))
@@ -22,4 +22,4 @@ delete pessoa.nome
 pessoa.idade = 29
 console.log(pessoa)
 
-// Outra opção é o freeze, aqui nem muda valores, nem adicionar, nem excluir atributos
+// Outra opÃ§Ã£o Ã© o freeze, aqui nem muda valores, nem adicionar, nem excluir atributos

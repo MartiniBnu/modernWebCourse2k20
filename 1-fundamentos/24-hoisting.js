@@ -1,4 +1,4 @@
-// Deixa eu criar a variavel sÛ no final
+// Deixa eu criar a variavel s√≥ no final
 
 a = 3
 
@@ -8,7 +8,7 @@ var a = 2
 
 console.log ('a=',a)
 
-// Nao funciona pq let n„o faz hoinsting
+// Nao funciona pq let n√£o faz hoinsting
 //console.log('b=',b)
 let b = 2
 console.log('b=',b)

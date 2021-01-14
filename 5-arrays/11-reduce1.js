@@ -1,4 +1,4 @@
-// função que serve para transformar um array em um outro elemento
+// funÃ§Ã£o que serve para transformar um array em um outro elemento
 const alunos = [
   {nome: 'Joao', nota: 7.3, bolsista: false},
   {nome: 'Maria', nota: 9.2, bolsista: true},

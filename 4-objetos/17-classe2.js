@@ -15,7 +15,7 @@ class Pai extends Avo {
 
 class Filho extends Pai {
   constructor() {
-    super('Silva') // chama o construtor do pai e usa profiss„o padr„o
+    super('Silva') // chama o construtor do pai e usa profiss√£o padr√£o
   }
 }
 

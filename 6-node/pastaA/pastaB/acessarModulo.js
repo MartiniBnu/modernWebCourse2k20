@@ -1,5 +1,5 @@
 const moduloA = require('../../1-moduloa')
-// no Linux é case sensitive, no Windows e MAC funca
+// no Linux Ã© case sensitive, no Windows e MAC funca
 console.log(moduloA.ola)
 
 //const moduloB = require('C:\Users\Marcos\OneDrive\DSV\_GIT\modernWebCourse2k20-1\6-node\2-moduloB.js')
@@ -11,7 +11,7 @@ const saudacao = require('saudacao')
 console.log(saudacao.ola)
 
 
-// Modulo Core, já pre-instalados
+// Modulo Core, jÃ¡ pre-instalados
 const http = require('http')
 http.createServer((req,res) => {
   res.write('Bom dia!!!')
