@@ -1,4 +1,4 @@
-// Funcao em JS È First-Class Object (Citizens)
+// Funcao em JS √© First-Class Object (Citizens)
 // Ou High order function
 
 // criar de forma literal
@@ -23,7 +23,7 @@ obj.falar = function () {return 'Opa'}
 console.log(obj.falar())
 
 
-// Como passar uma funÁ„o como par‚metro 
+// Como passar uma fun√ß√£o como par√¢metro 
 function run(fun) {
   fun()
 }
@@ -31,7 +31,7 @@ function run(fun) {
 run(obj.falar)
 run(function() {console.log('Executando...')})
 
-// Uma funÁ„o pode ser retornada
+// Uma fun√ß√£o pode ser retornada
 function soma(a,b) {
   return function (c) {
     console.log (a+b+c)

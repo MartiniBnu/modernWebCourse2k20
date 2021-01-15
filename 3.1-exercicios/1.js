@@ -1,5 +1,5 @@
-/* Crie uma funÁ„o que dado dois valores (passados como par‚metros) mostre no console a soma, subtraÁ„o,
-multiplicaÁ„o e divis„o desses valores. */
+/* Crie uma fun√ß√£o que dado dois valores (passados como par√¢metros) mostre no console a soma, subtra√ß√£o,
+multiplica√ß√£o e divis√£o desses valores. */
 function operacoes(a,b){
   console.log(`A soma de ${a} + ${b} eh: ${a+b}`)
   console.log(`A subtracao de ${a} - ${b} eh: ${a-b}`)

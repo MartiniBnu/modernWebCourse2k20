@@ -1,6 +1,6 @@
 // tenta um cast para depoois comparar
 console.log('01', '1' == 1)
-// Aqui compara tudo, até o type
+// Aqui compara tudo, atÃ© o type
 console.log('02', '1' === 1)
 
 console.log('03', '3' != 3)

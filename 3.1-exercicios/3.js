@@ -1,4 +1,4 @@
-/* Crie uma função que recebe dois parâmetros, base e expoente, e retorne a base elevada ao expoente. */
+/* Crie uma funÃ§Ã£o que recebe dois parÃ£metros, base e expoente, e retorne a base elevada ao expoente. */
 pow = (base, expoente) => Math.pow(base, expoente) 
 
 

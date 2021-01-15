@@ -1,12 +1,12 @@
 //par nome/valor 
-const saudacao = 'Opa' // Contexto lÈxico
+const saudacao = 'Opa' // Contexto l√©xico
 
 function exec() {
-  const saudacao = 'Fallaaaaa' // Contexto lÈxico 2
+  const saudacao = 'Fallaaaaa' // Contexto l√©xico 2
   return saudacao
 }
 
-// Obejtos s„o grupos aninhados de pares nome/valor
+// Obejtos s√£o grupos aninhados de pares nome/valor
 const cliente = {
   nome: 'Pedro',
   idade: 32,

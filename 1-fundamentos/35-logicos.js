@@ -3,7 +3,7 @@ function compras(trabalho1, trabalho2) {
   const comprarTv50 = trabalho1 && trabalho2
   //const comprarTv32 = !!(trabalho1 ^ trabalho2) // Ou Exclusivo, bitwise xor
   const comprarTv32 = trabalho1 != trabalho2
-  const manterSaudavel = !comprarSorvete // Operador unário
+  const manterSaudavel = !comprarSorvete // Operador unario
 
   return { sorvete: comprarSorvete, tv50: comprarTv50, tv32: comprarTv32, saudavel: manterSaudavel}
 }

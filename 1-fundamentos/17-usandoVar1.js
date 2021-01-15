@@ -15,5 +15,5 @@ console.log (sera)
 function teste() {
   var local = 123
 }
-// Não tem acesso
+// NÃ£o tem acesso
 console.log(local)

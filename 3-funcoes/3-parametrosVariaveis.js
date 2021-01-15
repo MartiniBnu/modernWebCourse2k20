@@ -1,4 +1,4 @@
-// mesmo n„o tendo parametros, podemos n„o declarar e pegar eles
+// mesmo n√£o tendo parametros, podemos n√£o declarar e pegar eles
 function soma(){
    let soma = 0
    for (i in arguments) {

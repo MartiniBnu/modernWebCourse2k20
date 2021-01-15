@@ -1,6 +1,6 @@
 function seForVerdadeEuFalo(valor) {
   if (valor) {
-    console.log('É verdade esse aqui >>>' + valor)
+    console.log('Ã‰ verdade esse aqui >>>' + valor)
   }
 }
 
@@ -10,7 +10,7 @@ seForVerdadeEuFalo(undefined)
 seForVerdadeEuFalo(NaN)
 seForVerdadeEuFalo('')
 seForVerdadeEuFalo(0)
-/* Daqui pra baixo é true */
+/* Daqui pra baixo Ã© true */
 seForVerdadeEuFalo(-1)
 seForVerdadeEuFalo(' ')
 seForVerdadeEuFalo('?')

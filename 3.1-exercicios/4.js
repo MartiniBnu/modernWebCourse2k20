@@ -1,5 +1,5 @@
-/* Crie uma funÁ„o que ir· receber dois valores, o dividendo e o divisor. A funÁ„o dever· imprimir o resultado
-e o resto da divis„o destes dois valores.
+/* Crie uma fun√ß√£o que ir√° receber dois valores, o dividendo e o divisor. A fun√ß√£o dever√° imprimir o resultado
+e o resto da divis√£o destes dois valores.
  */
 
  let imprimeDivisao = function(dividendo, divisor) {

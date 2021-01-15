@@ -9,7 +9,7 @@ for (let i in notas){
 }
 console.log(notasBaixas)
 
-// Com callback - Filter coloca uma condição e quando satisfaz traz
+// Com callback - Filter coloca uma condiÃ§Ã£o e quando satisfaz traz
 const notasBaixas2 = notas.filter(function(nota){
   return nota < 7
 })

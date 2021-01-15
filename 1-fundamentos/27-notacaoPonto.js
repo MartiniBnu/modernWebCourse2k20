@@ -9,7 +9,7 @@ console.log(obj1.nome)
 
 function Obj(nome) {
   this.nome = nome
-  // com o this fica visível para fora
+  // com o this fica visÃ­vel para fora
   this.exec = function() {
     console.log('Exec...')
   }

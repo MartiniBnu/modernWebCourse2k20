@@ -1,19 +1,19 @@
-console.log(7/0.0001) // N„o d· erro, È um tipo especÌfico do JS
+console.log(7/0.0001) // N√£o d√° erro, √© um tipo espec√≠fico do JS
 
 console.log("10" / 2) // Converte implicitamente
 
-console.log('3'+2) // String tem preferÍncia para concatenaÁ„o, e como + È uma funÁ„o em strings, ele concatena
-                   // Outras operaÁıes, como n„o existem no mundo de String, ele entende que pode tentar um  cast 
+console.log('3'+2) // String tem prefer√™ncia para concatena√ß√£o, e como + √© uma fun√ß√£o em strings, ele concatena
+                   // Outras opera√ß√µes, como n√£o existem no mundo de String, ele entende que pode tentar um  cast 
                   // de numero para tentar operar
 
 console.log('3'-2)
 
-console.log("10,s" / 2) // D· erro
+console.log("10,s" / 2) // D√° erro
 
-console.log("Show" * 2) // D· erro pq n„o pode multiplicar um texto
+console.log("Show" * 2) // D√° erro pq n√£o pode multiplicar um texto
 
-console.log(0.1 + 0.7) // D· um resultado n„o muito preciso devido a especificaÁ„o adotada para Floats pelo JD
+console.log(0.1 + 0.7) // D√° um resultado n√£o muito preciso devido a especifica√ß√£o adotada para Floats pelo JD
 
-// console.log(10.toString()) // D· erro pq precisa de cast
+// console.log(10.toString()) // D√° erro pq precisa de cast
 
 console.log((10).toString()) // Aqui funca

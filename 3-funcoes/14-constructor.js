@@ -18,7 +18,7 @@ function Carro(velocidadeMaxima = 200, delta=5) {
 
 }
 
-// Usa padr„o
+// Usa padr√£o
 const uno = new Carro
 uno.acelerar()
 uno.acelerar()

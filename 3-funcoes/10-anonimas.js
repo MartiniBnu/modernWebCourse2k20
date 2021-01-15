@@ -6,7 +6,7 @@ const imprimirResultado = function (a,b,operacao = soma) {
   console.log(operacao(a,b))
 }
 
-/* Como n„o passei usou o soma */
+/* Como n√£o passei usou o soma */
 imprimirResultado(3,4)
 
 /* Mesma coisa */
