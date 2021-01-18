@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Um pouco de CSS</title>
+    <link rel="stylesheet" href="3-poucoDeCss.css">
+    <style>
+      h1 {
+        font-size: 20px;
+      }
+      .fundoVermelho {
+        background-color: #C00;
+      }
+      .negrito {
+        font-weight: bold;
+      }     
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <span id="textoPrincipal" style="display: none;">Texto1</span><br><br><br> <!-- id é unico, não recomentando style aqui -->
+    <span class="fundoVermelho negrito">Texto2</span> <br> <!-- class pode usar várias -->
+    <span class="fundoVermelho" wb-atrib>Texto3</span> <!-- Pra pegar via JS com atributos usar document.querySelectorAll('[wb-atrib]') -->
+  </body>
+</html>

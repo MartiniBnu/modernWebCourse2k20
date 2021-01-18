@@ -1,0 +1,9 @@
+// Criar servidor http node 
+sudo npm i -g http-server
+
+// Startar
+cd 8-html
+http-server -p 9090.
+
+-- Startar sem cache
+http-server -c-1 -p 9090 .
