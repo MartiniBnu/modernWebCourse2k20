@@ -1,0 +1,111 @@
+<div wm-slider>
+
+  <p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da cidade" width="513" height="342" title="Muro da cidade">
+  </p>
+
+
+  <p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Intro Cod3r" height="342" title="Intro Cod3r">
+  </p>
+
+  <p class="circular">
+    <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Intro Cod3r" height="342" title="Muro da cidade">
+  </p>
+
+  <p class="texto">
+    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="Avatar" height="50" title="Avatar" align="left">
+    udsuhh3u2u uhhu 3242huh34hu34j34 jk432j hkhjk342hjk 432hjk3hj42khjk 342hjk
+    432hj43 jhjh342kj 342khjhj432 kjh324kjh jkh432jkh 342jkhhj34 324hjkj342342hjk43 2
+    432hj432hj43h2jhj342432jk432hjkhjk432342
+    423jhjh432kjhk432jkh432khj432hjk432hjk3h4jk22kjh3432khj4
+  </p>
+
+  <p class="cidade"></p>
+
+  <p>
+    <picture>
+      <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+      media="(min-width: 600px)">
+      <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo">
+    </picture> 
+  </p>
+
+</div>
+
+<script>
+  function mover(elem, inicio, fim, passo, callback) {
+    const novoInicio = inicio - passo 
+    if(novoInicio >= fim){
+      elem.style.left = novoInicio + 'px'
+      setTimeout(() => mover(elem,novoInicio,fim,passo,callback), 5)
+    } else {
+      callback()
+    }
+  }
+
+  //const p = document.querySelector('[wm-slider] > p')
+  //p.style.display = 'block'  
+  //mover(p, 1500, -520, 5, () => {
+  //  console.log('Terminou lazarento!')
+  //})
+
+  function slider() {
+    const elementos = document.querySelectorAll('[wm-slider] > p')
+    // Query selector all sempre retorna um node list, pra transformar em array
+    // usamos a função abaixo
+    const slides = Array.from(elementos)
+    exibirSlides(slides, slides[0])
+  }
+
+  function exibirSlides(slides, slide) {
+    slide.style.display = 'block'
+    // Pegar a largura da página
+    const inicio = innerWidth
+    // Pegar a largura da imagem negativa, pra fazer ela sumir
+    const fim = -slide.clientWidth
+    // Posicionar o left dela 
+    slide.style.left = `${inicio}px`
+    // Mover
+    mover(slide, inicio, fim, 5, () => {
+      // esconder o slide atual
+      slide.style.display = 'none'      
+      // Pegar o próximo
+      exibirSlides(slides, getProximo(slides, slide))
+    })
+  }
+
+  function getProximo(lista, atual) {
+    const i = lista.indexOf(atual) + 1
+    return i < lista.length ? lista[i] : lista[0]
+  }
+
+  // Instanciar a slider
+  slider()
+
+</script>
+
+<style>
+  p {
+    position: absolute;
+    display: none;
+  }
+  .circular {
+    width: 513px;
+    background-color: #fff;
+  }
+  .texto {
+    width: 400px;
+  }
+  .texto img {
+    margin-right: 10px;
+  }
+  .cidade {
+    width: 513px;
+    height: 342px;
+    background-image: url("http://files.cod3r.com.br/curso-web/imagem4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+</style>
