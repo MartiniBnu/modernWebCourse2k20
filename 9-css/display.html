@@ -5,7 +5,30 @@
     <meta charset="UTF-8">
     <title>Display</title>
     <style>
-        /* ... */
+        body {
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+
+        ul { padding: 0;}
+        div { background-color: seagreen;}
+        span { background-color: dodgerblue;}
+        li { background-color: purple;}
+        
+        div, span, li {
+            width: 50%; /* span não usa width e heigth */
+            width: 200px;
+            height: 80px;
+            padding-top: 30px; /* Aqui span usa */
+            text-align: center;
+            padding-left: 30px;
+
+            /*display: block; /* Todos são mostrados com uma linha para cada */
+            /*display: inline; /* Todos são mostrados numa linha só */
+            display: inline-block; /* Todos são mostrados numa linha só, mas vai considerar alturas e larguras, e não cabendo vai pra próxima*/
+        }
+
     </style>
 </head>
 

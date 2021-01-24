@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
-        /* ... */
+        body{
+            background-color: aquamarine;
+        }
     </style>
+    <!-- A prioridade é pela ordem de processamento, o ultimo prevalece -->
+    <link rel="stylesheet" href="css/externo.css">
 </head>
-
-<body>
+<!-- Aqui vai ficar pq é o inline, é predominante mesmo não sendo o ultimo, mas lembrar, nunca usar inline -->
+<body style="background-color: coral;">
     <h1>E agora?</h1>
 </body>
 

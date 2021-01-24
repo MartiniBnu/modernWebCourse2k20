@@ -6,6 +6,32 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*
+            Em linhas gerais
+
+            1. regra com !important (não usar)
+            2. seletores mais específicos
+            3. última regra processada (quando tem empate)
+
+        */
+
+        p {
+            background-color: gray;
+        }
+
+        .observacao { /* É mais específica, então usará ela */
+            background-color: #5f5;
+            border: dashed 5px;
+            padding: 200px !important; /* Vai ficar mais importante ainda */
+            font-size: 40px;
+        }
+
+        p.observacao { /* Deve rodar ele pois é mais específico ainda */
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+        }
+
+
     </style>
 </head>
 

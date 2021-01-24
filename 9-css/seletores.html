@@ -6,7 +6,91 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* Universal */
+        /* {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Classe */
+        /*.tag {
+            color: lightblue;
+            background-color: aliceblue;
+        }
+        /* id */
+        /*#aprovados {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* dentro do id aninhado o div que está diretamente dentro */
+        /*#aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Section até existe, mas não está diretamente dentro, então não funciona assim */
+        /*#aninhado > section {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* assim funciona, pq pega qq filho dentro dele 
+        #aninhado section {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Tem alguma tag ul que está logo depois de uma p ? 
+        p + ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Tem alguma tag ol que está logo depois de uma p ? Aqui não rola pq não está exatamente abaixo 
+        p + ol {
+            color: #ff0;
+            background-color: #f77;
+        }*/
+        /* Aqui funciona, ou seja, tem alguma ol irmã de um p? 
+        p ~ ol {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* seletor de propriedade 
+        [feira] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Quando tem o atributo e o valor 
+        [feira=casa] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Quando tem qq coisa e termina com sa 
+        [feira*=sa] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Quando encontrar um primeiro filho e este seja um span 
+        span:nth-child(1) {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Todos filhos impares(odd) ou pares(even), ou um filho específico, só colocar o numero dentro, e que tá dentro de section 
+        section > :nth-child(even) {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Se quiser uma regra e aplicar também para outros elementos 
+        section > :nth-child(even), ul, p {
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Se quiser pegar só o label 
+        section > :nth-child(odd) label{
+            color: #ff0;
+            background-color: #f77;
+        }
+        /* Dentro da section, trazer os spans, somente o segundo elemento span */
+        section > span:nth-of-type(2){
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
@@ -29,7 +113,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>

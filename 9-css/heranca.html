@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 
+<!-- https://fonts.google.com/ -->
+
 <head>
     <meta charset="UTF-8">
     <title>Herança</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
     <style>
-        /* ... */
+        body {
+            font-family: 'Oswald', sans-serif;
+            font-size: 40px;
+            border: solid 3px red; /* Borda não é passada por herança */
+            padding: 50px; /* Também não passa por herança */
+            margin: 10px 100px 150px 200px;
+            /* c d b e quando quatro
+               c+b d+e quando dois
+               todos quando um valor só
+               funciona para margin e para padding */
+        }
+
+        div {
+            border: inherit; /* Aqui dizemos que vai herdar */
+            padding: inherit; /* Também herdará */
+
+        }
+
     </style>
 </head>
 

@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <title>Tamanho Box</title>
     <style>
+        * {
+            box-sizing: border-box; /* Aqui vai passar para todos */
+        }
+        
+        
         body {
             font-size: 45px;
+            margin: 0;
+            /*box-sizing: border-box; /* Não passa para os filhos, só passa com seletor universal */
         }
+
+        div {
+            background-color: deepskyblue;
+            width: 600px;
+            height: 300px;
+            padding: 100px;
+            border: solid 20px;
+            /*box-sizing: border-box; /* content-box é o padrão, ele faz o conteudo ficar 100%, ai padding e border ultrapassam */*/
+        }
+
+
     </style>
 </head>
 <body>
