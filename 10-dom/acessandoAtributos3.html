@@ -16,7 +16,23 @@
         </ul>
     </div>
     <script>
-        // ...
+        // Mais eficiente
+        const lista = document.querySelector('#compras')
+        // Somente leitura
+        console.log(lista.attributes)
+        console.log(lista.attributes[0])
+        console.log(lista.attributes.id)
+        console.log(lista.attributes[1])
+        console.log(lista.attributes.destino)
+        console.log(lista.attributes[2])
+        console.log(lista.attributes['data-urgencia'])
+        // Dá erro:
+        //console.log(lista.attributes.data-urgencia)
+
+        // Não dá erro mais não mexe no HTML
+        lista.attributes.destino = 'Casa'
+        console.log(lista.attributes.destino)
+
     </script>
 </body>
 

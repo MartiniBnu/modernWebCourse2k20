@@ -31,7 +31,20 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms)
+        console.log(document.forms[0])
+        /* Aqui vem nodeList */
+        console.log(document.getElementsByName('pesquisa'))
+        /* Aqui html collection */
+        console.log(document.getElementsByTagName('form'))
+        /* Melhor forma */
+        console.log(document.pesquisa)
+        /* Pegar componentes internos */
+        console.log(document.pesquisa.q)
+        /* Alterar */
+        document.pesquisa.q.value = 'Albatroz'
+        /* Alterar num select também*/
+        document.pesquisa.hl.value = 'en-us'
     </script>
 </body>
 

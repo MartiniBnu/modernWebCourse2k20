@@ -10,7 +10,24 @@
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
     <script>              
-        // ...
+        /* Não passa # pq já é a função por id */
+        document.getElementById('primeiro').classList.add('destaque')
+        /* Pegar vários elementos por tag name */
+        const divs = document.getElementsByTagName('div')
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        /* spread também pode ser usado*/
+        const divsArray = [...divs]
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+        /* Pegando elementos com a mesma classe */
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+        for (let e of ultimosElementos){
+            e.classList.remove('destaque')
+        }
+
+        /* Todas função retornam um HTML Collection */
+
     </script>
 </body>
 </html>

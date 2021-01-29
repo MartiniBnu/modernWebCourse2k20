@@ -17,7 +17,32 @@
         </ul>
     </div>
     <script>
-        // ...
+        // Não é tão performático quanto id
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log('Elemento "ul".........................')
+        console.log(lista)
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.id) // lista.destino não funcionaria, pq é customizada
+        console.log('hasAttribute', lista.hasAttribute('destino')) 
+        console.log('getAttribute', lista.getAttribute('destino')) 
+        lista.setAttribute('destino', 'empresa')
+        console.log('getAttribute_After_Set', lista.getAttribute('destino')) 
+        lista.setAttribute('status', 'aberto')
+        console.log('getAttribute_Status_After_Set', lista.getAttribute('status')) 
+        lista.removeAttribute('status')
+        console.log('getAttribute_Status_After_Rem', lista.getAttribute('status')) 
+        console.log(lista.dataset) // note que ele remove o data-, pq o - caga atributos
+        console.log(lista.urgencia)  // nao funciona
+        lista.dataset.urgencia = 4 
+        console.log(lista.getAttribute('data-urgencia'))
+
+        // cuidado
+        const label = document.querySelector('label')
+        console.log(label.for) // Não é um atributo, é uma palavra reservada, pra pegar o label for lá de cima só conforme abaixo
+        console.log(label.htmlFor)
+        console.log(label.getAttribute('for'))
+
+
     </script>
 </body>
 

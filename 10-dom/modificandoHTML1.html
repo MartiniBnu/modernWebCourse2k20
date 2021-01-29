@@ -9,7 +9,37 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body = document.querySelector('body')
+
+        const div1 = document.createElement('div')
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeira'
+
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo','valor')
+        div2.innerHTML = 'Segunda'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceira'
+        const div3 = document.createElement('div')
+        div3.appendChild(p)
+
+        // Finalmente coloca no body
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        // Outra opção, que adiciona dentro e antes de outro elemento
+        const texto = document.createTextNode('Antes...')
+        div3.insertBefore(texto,div3.childNodes[0])
+
+        // clone
+        const div4 = div3.cloneNode(true) // true clona os filhos também
+        body.appendChild(div4)
+        body.removeChild(div3)
+
+
     </script>
 </body>
 

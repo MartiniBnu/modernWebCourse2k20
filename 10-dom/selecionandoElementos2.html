@@ -10,7 +10,47 @@
     <div>Segundo</div>
     <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
     <script>              
-        // ...
+        /* Espera um seletor, então precisa por #, class, ou outra coisa */
+        document.querySelector('#primeiro').classList.add('destaque')
+
+        /* Funções para facilitar o trabalho */
+        const selecionar = seletor => 
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+
+        const desSelecionar = seletor => 
+            document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+
+        
+        /* Testar as formas de selecionar */
+        selecionar('div')
+        /* Todos */
+        desSelecionar('*')
+
+
+        selecionar('.terceiro')
+        /* Precisa ter as duas, por isso não funciona assim*/
+        selecionar('.terceiro.ultimo')
+        desSelecionar('*')
+
+
+        /* Todos menos o primeiro */
+        selecionar(':not(#primeiro)')
+        desSelecionar('*')
+
+
+        /* Primeiro filho de um elemento que tem filho */
+        selecionar(':nth-child(1)')
+        desSelecionar('*')
+
+
+        /* Primeiro elemendo de um tipo passado (div) */
+        selecionar('div:nth-of-type(1)')
+        desSelecionar('*')
+
+        /* Pro atributo */
+        selecionar('[wb-attrib]')
+
+
     </script>
 </body>
 </html>
