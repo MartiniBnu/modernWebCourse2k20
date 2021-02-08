@@ -1,3 +1,4 @@
+/* Configuração do TS, não do Gulp */
 {
     "files": [
         "src/**/*.ts"

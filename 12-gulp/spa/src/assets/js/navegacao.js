@@ -42,4 +42,5 @@
     
     configurarLinks()
     navegacaoInicial()
+
 })()
