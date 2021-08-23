@@ -1,0 +1,3 @@
+# Modern Web Course 2k21
+This repository is where I will concentrate the exercises for the web development course
+...
