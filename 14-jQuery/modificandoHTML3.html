@@ -13,13 +13,35 @@
     <div id='conteudo'></div>
 
     <script>
-        const pessoas = [
-            { nome: 'Ana', nota: 9.1 },
-            { nome: 'Bianca', nota: 8.4 },
-            { nome: 'Carlos', nota: 7.6 },
-            { nome: 'Julia', nota: 9.7 }
-        ]
+        // Gatilho disparado assim que a página for carregada 
+        //$(document).ready(function(){
+        // Outra opção igual, mas com menos código 
+        $(function(){
+            // Transformar os itens acima numa tabela com nome e nota, sem cabeçalho mesmo 
+            const pessoas = [
+                { nome: 'Ana', nota: 9.1 },
+                { nome: 'Bianca', nota: 8.4 },
+                { nome: 'Carlos', nota: 7.6 },
+                { nome: 'Julia', nota: 9.7 }
+            ]
+            
+            // Linhas, criamos um callback passando a lista de objetos, e montando várias
+            // linhas com as colunas referente ao nome e nota
+            const linhas = pessoas.map(p => {
+                const tdNome = $('<td>').html(p.nome)
+                const tdNota = $('<td>').html(p.nota)
+                return $('<tr>').append(tdNome,tdNota)
+            })
+            // Criando a tabela 
+            const tabela = $('<table>').append(linhas)
+                .css('border', 'solid 5px')
+                
+            // Selecionar a div conteudo e colocando a tabela dentro
+            $('#conteudo').append(tabela)
+        })  
         
-        // ...
+        
+
+
     </script>
 </body>

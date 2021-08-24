@@ -20,6 +20,50 @@
     <input type="text" placeholder="Cor de Background">
 
     <script>
-        // ...
+        // Buscar a posição do mouse
+        function mostrarPosicaoMouse(e) {
+            $('#posicao').html(`x: ${e.clientX} y: ${e.clientY}`)
+        }
+
+        // Associar ao body, o movimento do mouse
+        // Selecionamos o body, e dizemos qual evento queremos tratar
+        // notem que não passamos nenhum parâmetro, nós passamos a função
+        // para o evento on, e ela se acha na chamada
+        $('body').on('mousemove', mostrarPosicaoMouse)
+
+        // Vamos remover o evento mousemove, quando estivermos posicionados
+        // sobre a div posição, ai remove pra sempre...
+        $('#posicao').mouseover(e => {
+            $('body').off('mousemove', mostrarPosicaoMouse)
+        })
+
+        // Mas vamos registrar no mouseleave
+        $('#posicao').mouseleave(e => {
+            $('body').on('mousemove', mostrarPosicaoMouse)
+        })
+
+        // Monitoramento dos cliques
+        let cliques = 0 
+        $('body').click(e => {
+            // Para cada clique, ele irá incrementar abaixo
+            $('#cliques').html(`Cliques: ${++cliques}`)
+        })
+
+        // Monitoramento do teclado
+        const backgroundOriginal = $('body').css('background-color')
+        $('input').keyup(function (e) {
+            // nunca usar arrow quando for fazer this, pq o this é sempre o elemento atual 
+            // selecionado, então podemos perder o escopo todo
+            const valor = $(this).val()
+            // Usar expressão regular, começa com #, depois tem 1 digito que pode
+            // ser de a até f minúsculo ou de A até F maiúsculo, de 3 a 6 vezes
+            if (valor.match(/#[\da-fA-F]{3,6}/)){
+                $('body').css('background-color', valor)
+            } else {
+                $('body').css('background-color', backgroundOriginal)
+            }
+
+        })
+
     </script>
 </body>

@@ -22,7 +22,67 @@
 <body class='conteudo exercicio'>
     <h1>Manipulando Atributos</h1>
     <div wm-relogio='1000'></div>
+    <div wm-relogio='3000'></div>
     <script>
-        // ...
+        // Usar o atributo wm-relagio pra saber quantos milisegundos vai esperar para atualizar o relgócio
+        function Relogio(elemento) {
+            const horaCerta = $('<p>').html('0')
+            const botaoMenos = $('<button>').html('-')
+            const botaoMais = $('<button>').html('+')
+            // O elemento recebido no parametro é um elemendo da Dom
+            // para que eu possa instanciar o mesmo como um elemento jQuery
+            // então precisamos fazer a seleção dele abaixo
+            const $elemento = $(elemento)
+            $elemento.append(horaCerta, botaoMenos, botaoMais)
+
+            // Buscar o intervalo atual
+            const getIntervaloAtual = 
+                // Função arrow, ou seja, o retorno é implicito do resultado 
+                () => parseInt($elemento.attr('wm-relogio'))
+            
+            // Temporizador
+            let temporizador = null 
+            // Novamente arrow
+            const iniciar = () => {
+                // Se o temporizador estiver vazio, ele dá um clear
+                if (temporizador) clearInterval(temporizador)
+                // Criar um novo temporizador, com intervalo igual ao atributo
+                temporizador = setInterval(() => {
+                    horaCerta.html(new Date().toLocaleString('pt-BR'))
+                }, getIntervaloAtual())
+
+            }
+
+            // Alteração de intervalo
+            const alterarIntervalo = delta => {
+                // esse teste garante que o resultado não seja menor que 1000, para evitar
+                // que tenhamos um relógio com atualização menor que 1 segundo
+                const novo = Math.max(getIntervaloAtual() + delta, 1000)
+                // Atualizar o atributoi 
+                $elemento.attr('wm-relogio', novo)
+                // Reiniciar o contador
+                iniciar()
+            }
+
+            // Adicionar os eventos aos botões
+            botaoMenos.click(e => alterarIntervalo(1000))          
+            botaoMais.click(e => alterarIntervalo(-1000))
+
+            // Ao final, iniciaremos o contator
+            iniciar()
+
+        }
+
+        // Selecionar todos os elementos que tem o atributo wm-relógio
+        // e cada um irá chamar a função Relógio, passando o mesmo 
+        $('[wm-relogio]').each((i, e) => new Relogio(e))
+
+        // A função attr, pode ser usada também para criar novos atributos dentro do elemento
+        $('[wm-relogio]').attr({opa: 1, novo: true})
+
+        // Remoção de atributo
+        //$('[wm-relogio]').removeAttr('opa').removeAttr('novo')
+
+
     </script>
 </body>

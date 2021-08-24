@@ -17,6 +17,47 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        // Selecionando a appendando ao final ou inicio
+        $('#div1').append(', 2')
+        $('#div1').prepend('0, ')
+        // Outra opção é colocando o conteudo e então dando append/prepend
+        // note que precisamos colocar um elemento html, diferente de acima
+        $('<span>, 3,</span>').appendTo('#div1')
+        $('<span>-1, </span>').prependTo('#div1')
+        // adicionando antes ou depois
+        $('#div2').before('<p>Antes 2</p>')
+        $('#div2').after('<p>Depois 2</p>')
+        // Mesmo esquema, cria conteudo e depois coloca em qual elemento ele vai entrar
+        $('<p>Antes 3</p>').insertBefore('#div3')
+        $('<p>Depois 3</p>').insertAfter('#div3')
+
+        // Para envolver todos os elementos que você selecionar usamos o wrap
+        // Assim desse jeito cada um ele vai criar um div
+        //$('p.numero').wrap('<div>')
+        // Mas dá pra colocar todos dentro de uma wrap só, usando o wrap all
+        $('p.numero').wrapAll('<div id="div4">')
+
+        // Limpa todo conteudo dentro do seletor 
+        $('#div4').empty()
+
+        // Selecionar vários elementos ao mesmo tempo, e pegue os anteriores
+        $('#div3, #div4').prev().remove()
+
+        // Selecionar e então substtituir todos que selecionar pelo conteudo montado antes
+        //$('<div>Substituido</div>').replaceAll('body > p')
+        // Invertendo
+        //$('body > p').replaceWith('<div>Substituido</div>')
+        // Dá para fazer com callback
+        $('body > p').replaceWith(function() {
+            // Aqui ele tá pegando o conteudo html do seletor passado no callback, 
+            //e então jogando pra dentro do html da nova div criada, basicamente é um wrap
+            return $('<div>').html($(this).html())
+        })
+
+
+
+
+
+
     </script>
 </body>
