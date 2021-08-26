@@ -22,6 +22,43 @@
     </div>
 
     <script>
-        // ...
+        // Usando eval para analisar o comando montado
+
+        // Garantir que no comando ninguém utiliza o $
+        (function ($) {
+            $.fn.interpretar = function() {
+                // Função que retira o começo e fim da string (Remover as {{ e }} )
+                const retirarChaves = s => s.substring(2, s.length -2)
+                // Conteudo seria todo o html do elemendo invocador
+                const conteudo = $(this).html()
+                // Ler tudo que tiver duas chaves literais no começo e fim
+                // e como tem /g, ele vai criar no escopo global, com um mapa
+                const expressaoComChaves = conteudo.match(/\{\{.+\}\}/g)
+                // Pegar todas as expressões já retirando as chaves
+                const expressoes = expressaoComChaves.map(retirarChaves)
+                // Resultados das execuções, vai pegar uma a uma e rodar o eval
+                const resultados = expressoes.map(e => eval(e))
+
+                // Agora vamos trocar todas as expressões com chaves e substiuir o final delas com os resultados da execução
+                let conteudoFinal = conteudo 
+                for (let i = 0; i < expressaoComChaves.length; i++) {
+                    conteudoFinal = conteudoFinal.replace(
+                        // Vai trocar pelo resultado
+                        expressaoComChaves[i], resultados[i]
+                    )
+                }
+
+                // Enviar ao html os resultados
+                $(this).html(conteudoFinal)
+                
+                // Sempre bom retornar para poder encadear chamadas se for necessário
+                return this
+
+            }
+        })(jQuery)
+
+        // Invocar
+        $('div').interpretar()
+
     </script>
 </body>

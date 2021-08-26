@@ -13,6 +13,10 @@
     <div></div>
     <script src="js/temporizador.js"></script>
     <script>
-        // ...
+        // Chamada do plugin 
+        $('div').temporizador({
+            mensagem: 'Em breve um novo site para você!',   
+            horario: '23:34:00'
+        }).hide().fadeIn(3000) // Só é possivel encadear, pois lá na função tempos return this
     </script>
 </body>

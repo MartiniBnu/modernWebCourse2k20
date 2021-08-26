@@ -23,6 +23,32 @@
     <div id='animar'>Animar!</div>
 
     <script>        
-        // ...
+        // Selecionar o bottao, ao clicar, vamos animar
+        $('button').click(e => {
+            const t = 450
+            // Esconder e mostrar
+            //$('#animar').hide(t).show(t)
+            
+            // Toggle vai alternar o hide and show
+            $('#animar').toggle(t).toggle(t)
+            
+            // fadeout e fadein, sumir e voltar
+            //$('#animar').fadeOut(t).fadeIn(t)
+            
+            // Mesma coisa, mas com toggle
+            $('#animar').fadeToggle(t).fadeToggle(t)
+
+            // slideUp e Down, vai rolar a div
+            //$('#animar').slideUp(t).slideDown(t)
+
+            // mesma coisa com toggle
+            $('#animar').slideToggle(t).slideToggle(t)
+
+
+
+        })
+
+
+
     </script>
 </body>

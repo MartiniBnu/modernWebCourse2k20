@@ -28,6 +28,37 @@
     <div>Animar!</div>
 
     <script>
-        // ...
+        // Animação um pouco mais personalizada
+
+        function alterarLargura(valor, duracao, callback){
+            $('div').animate({width: `+=${valor}`}, duracao, callback)
+        }
+
+        function moverDiagonal(valor, duracao, callback){
+            $('div').animate({top: `+=${valor}`, left: `+=${valor}`}, duracao, callback)
+        }
+
+        function girar(valor, duracao, callback) {
+            $('div').animate({transform: `+=${valor}`}
+                            ,{step: function(valor) {
+                                // Neste caso podemos selecionar o elemento
+                                // com this, pois estamos dentro do seletor do div
+                                $(this).css('transform', `rotate(${valor}deg)`)
+                            }
+                            ,duration: duracao
+                        }, 'linear', callback )
+        }
+        // Padrão 
+        alterarLargura(300,100, () => {
+            // Trocando segundos por slow
+            alterarLargura(-300, 'slow', () => {
+                // Padrão
+                moverDiagonal(300, 600, () => {
+                    // Girar
+                    girar(3300, 3000)
+                })
+            })
+        })
+
     </script>
 </body>
