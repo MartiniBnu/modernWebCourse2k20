@@ -1,0 +1,8 @@
+sudo docker pull mysql
+sudo docker images
+
+
+Crie o diretório necessário para armazenar os dados mySQL.
+sudo mkdir /var/lib/mysql -p
+
+sudo docker run -d --name mysql-server -p 3306:3306 -v /var/lib/mysql:/var/lib/mysql -e "MYSQL_ROOT_PASSWORD=martini123" mysql

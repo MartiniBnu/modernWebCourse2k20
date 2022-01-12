@@ -1,0 +1,23 @@
+db.estados.find().pretty()
+
+db.estados.update({sigla: "SP"}, {$set: {populacao: 45340000}})
+
+db.estados.find().pretty()
+
+// aqui funca pq nao existia outras cidades, se fizer num que ja tem, ira substituir
+db.estados.update({sigla: "AL"}, {$set: {cidades: [{nome: "Sergipe"}]}})
+
+db.estados.find({sigla: "AL"}).pretty()
+
+// aqui fazemos da forma que ira dar um append
+db.estados.update({sigla: "SP"}, {$push: {cidades: {nome: "Santos", populacao: 4338988}}})
+
+db.estados.find({sigla: "SP"}).pretty()
+
+// Buscar onde tem populaçao
+db.estados.find({populacao: {$exists: true}}, {_id: 0, nome: 1}).pretty()
+
+
+
+
+  

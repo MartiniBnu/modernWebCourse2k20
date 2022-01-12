@@ -1,0 +1,24 @@
+db.estados.find().pretty()
+
+db.estados.remove({sigla: "AC"})
+
+// Remove so o primeiro que achar que tem populaçao
+//db.estados.remove({populacao: {$exists: true}}, 1)
+
+db.estados.count()
+
+db.estados.update({sigla: "RJ"}, {$set: {populacao: 16000000}})
+
+
+
+db.estados.insert({nome: "São Paulo", sigla: "SP", regiao: "Sudeste", cidades: [{_id: ObjectId(), nome: "Campinas", area: 795.7, prefeito: "Jonas Donizette", populacao: 1081000},
+                                                                                {_id: ObjectId(), nome: "Guarulhos", populacao: 11325000},
+                                                                                {_id: ObjectId(), nome: "Sorocaba", distanciaCapital: 87, populacao: 644919}]})
+// excluir conforme populaçao
+db.estados.aggregate([
+  { $project: {populacao: {$sum: "$cidades.populacao"}, sigla: 1, _id:0} }
+])
+
+db.estados.remove({populacao: {$lt: 20000000.0}})
+
+  
