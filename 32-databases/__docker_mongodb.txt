@@ -1,14 +1,11 @@
-sudo docker pull mongodb
-sudo docker images
+-----------------------------------------
 
-Crie o diretório necessário para armazenar os dados Mongo.
-sudo mkdir /var/lib/mongodb -p
 
-sudo docker run --name mongodb -d -v YOUR_LOCAL_DIR:/var/lib/mongodb -e MONGO_INITDB_ROOT_USERNAME=martini -e MONGO_INITDB_ROOT_PASSWORD=martini123 mongo
+docker volume create mongodbdata
 
-sudo docker run --name mongodb -d -v YOUR_LOCAL_DIR:/var/lib/mongodb mongo
+sudo docker run --name mongodb -d -v mongodbdata:/var/lib/mongodb -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=martini123 mongo
+
+sudo docker run --name mongodb -d -v mongodbdata:/var/lib/mongodb mongo
 
 
 sudo docker exec -it mongodb bash
-
------------------------------------------
